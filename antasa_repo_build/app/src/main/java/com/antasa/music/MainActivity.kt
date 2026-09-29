@@ -119,8 +119,7 @@ fun AntasaApp(songs: List<Song>, current: Int, playing: Boolean,
                 Text("${songs.size} lagu ditemukan", color = Color.Gray, modifier = Modifier.padding(top = 4.dp, bottom = 12.dp))
                 if (songs.isEmpty()) {
                     Box(Modifier.fillMaxWidth().weight(1f), contentAlignment = Alignment.Center) {
-                        Text("Belum ada lagu lokal.
-Tambahkan file musik ke HP kamu.", color = Color.LightGray)
+                       Text("Belum ada lagu lokal.\nTambahkan file musik ke HP kamu.", color = Color.LightGray )
                     }
                 } else {
                     LazyColumn(Modifier.weight(1f)) {
